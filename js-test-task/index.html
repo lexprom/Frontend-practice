@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacts</title>
+</head>
+<body>
+  <div class="main">
+	  <h3>Contacts</h3>
+	<input type="text" placeholder="Filter" id="filter" onkeyup="app.Filter()">
+	<table>
+		<tbody id ="contacts">
+		</tbody>
+	</table>
+  	<form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+	<h2>Add contact</h2>
+	<input type="text" id="add-name" placeholder="Name">
+	<input type="text" id="add-number" placeholder="Number">
+	<input value="Add" type="submit">
+	</form>
+
+	<div id="spoiler">
+ 		<form action="javascript:void(0);" method="POST" id="saveEdit">
+			 <input type="text" id="edit-name">
+			 <input type="text" id="edit-num">
+			 <input type="submit" value="Edit" /> <a onclick="CloseIn()"></a>
+ 		</form>
+	</div>
+</div>
+ </div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
