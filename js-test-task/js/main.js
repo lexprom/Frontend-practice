@@ -1,4 +1,4 @@
-const app = new function()
+export const app = new function()
 {
     const el = document.getElementById('contacts');
     let CONTACTS = [
@@ -106,4 +106,3 @@ const app = new function()
         this.FillAll();
     }
 }
-app.FillAll();
